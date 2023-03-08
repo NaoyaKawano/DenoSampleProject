@@ -1,18 +1,12 @@
 import { Head } from "$fresh/runtime.ts";
-import FooterComponent from "../components/FooterComponent.tsx";
-import HeaderComponent from "../components/HeaderComponent.tsx";
 import Counter from "../islands/Counter.tsx";
 
-export default function Home() {
+export default function OldIndex() {
   return (
     <>
       <Head>
-        <title>色々改造してみるテスト</title>
+        <title>Fresh App</title>
       </Head>
-
-      {/* ヘッダー */}
-      <HeaderComponent />
-
       <div class="p-4 mx-auto max-w-screen-md">
         <img
           src="/logo.svg"
@@ -25,9 +19,6 @@ export default function Home() {
         </p>
         <Counter start={3} />
       </div>
-
-      {/* フッター */}
-      <FooterComponent />
     </>
   );
 }
